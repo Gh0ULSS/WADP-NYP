@@ -1,0 +1,116 @@
+<!doctype html> 
+<html>
+<head>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="../../structure.css">
+	<title> Contact Us </title>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logofaq.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html">TIPS</a>
+				<ul>
+					<li><a href="../tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="../tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="../tipscontent/planning.html">Planning</a></li>
+					<li><a href="../tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html" style="color:rgb(238, 199, 199);">FAQ</a>
+				<ul>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="contactus.html" style="color:rgb(238, 199, 199);">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+</header> 
+
+<h1>Contact Us</h1>
+
+
+<!--- FILL IN YOUR CODES BELOW --->
+  
+
+<fieldset>
+<label><h2>Find Us here to follow updates and news on website</h2></label>
+
+<p><a href="https://www.facebook.com/"><h3>Facebook<img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a></p>
+<p><a href="https://www.instagram.com/"><h3>Instagram<img class="icons" src="../../../images/insta.png" height="30" width="30"></a></p>
+<p><a href="https://www.twitter.com/"><h3>Twitter<img class="icons" src="../../../images/twitter.png" height="30" width="30"></a></p>
+<p><a href=""><h3>Tumblr<img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a></p>
+<h2 style="text-decoration:underline;text-align:left;">Emails:</h2>
+</fieldset>
+<!--END HERE-->
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="#">Contact Us</a>
+	<a href="aboutus.html">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+</html>

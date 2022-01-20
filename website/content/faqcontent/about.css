@@ -1,0 +1,67 @@
+
+
+
+
+fieldset{
+
+	width:70%;
+	margin:auto;
+	margin-bottom:12%;
+	padding-bottom:10%;
+}
+
+
+
+
+
+h1 {
+	text-align:center;
+	padding-top:12.5%;
+	margin:auto;
+	text-decoration:underline;
+	color:black;
+	font-family:Calibri;
+	color:#800000;
+	}
+
+#contact{
+	text-align:left;
+	color:gray;
+	text-decoration:none;
+	margin-left:-11%;
+	margin-top:-11%;
+	
+}
+h3{
+	margin-left:-9%;
+	color:gray;
+}
+
+#link {
+	width:68%;
+	color:rgb(238, 199, 199);
+	padding-bottom:-10%;
+	padding-left:10%;
+	padding-right:1%;
+	margin-right:5%;
+	margin-bottom:1%;
+}
+
+
+
+
+
+
+
+
+h2{
+	color:#800000;
+	margin-top:1%;
+	text-align:center;
+	text-decoration:underline;
+	}
+
+
+#comment{
+	width:80%;
+}

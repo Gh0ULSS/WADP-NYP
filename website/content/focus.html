@@ -1,0 +1,257 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="style/focus.css">
+<link rel="stylesheet" href="../structure.css">
+<script src="javascriptarea/focus.js" type="text/javascript"></script>
+
+
+<title> Focus </title>
+
+
+</head>
+
+
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../images/title.png">
+	<img class="logos" id="logo" src="../../images/logofocus.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../home.html">HOME</a></li>
+			<li><a href="tips.html">TIPS</a>
+				<ul>
+					<li><a href="tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="tipscontent/planning.html">Planning</a></li>
+					<li><a href="tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="timetable.html">TIMETABLE</a></li>
+			<li><a href="#" style="color:rgb(238, 199, 199);">FOCUS</a></li>
+			<li><a href="faq.html">FAQ</a>
+				<ul>
+					<li><a href="faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="faq.html">Frequently Asked Questions</a></li>
+					<li><a href="faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../images/banner1.jpg">
+		<img class="banner" src="../../images/banner2.jpg">
+		<img class="banner" src="../../images/banner3.png">
+		<img class="banner" src="../../images/banner4.png">
+		<img class="banner" src="../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header>
+ 
+<body>
+<div id="wrapz">
+<div id="form" class="flex">
+	<h3>Key in your grades</h3>
+	
+
+  <table>
+	<tr><td>Module</td>
+		<td>CreditHours</td>
+		<td>Grade</td>
+	</tr>
+  </table>
+  
+	<form id="myForm"> 
+	<table id="myTable">	
+	<tbody>
+		<tr>
+		
+			<td><input type="text"  class = "module" required ></td>
+			
+			<td><input type="number" min="1" max="30"  class="credithours" required></td>
+			
+			<td><select class="grade" required>
+				<option value="-1"> Select </option>
+				<option value="4.0">A</option>
+				<option value="3.5">B+</option>
+				<option value="3.0">B</option>
+				<option value="2.5">C+</option>
+				<option value="2.0">C</option>
+				<option value="1.5">D+</option>
+				<option value="1.0">D</option>
+				<option value="0.0">F</option></select></td>
+		</tr> 
+		
+		<tr>
+		
+			<td><input type="text" size="20" class = "module" required></td>
+			
+			<td><input type="number" min="1" max="30" size="5" class="credithours" required></td>
+			
+			<td><select class="grade" required>
+				<option value="-1"> Select </option>
+				<option value="4.0">A</option>
+				<option value="3.5">B+</option>
+				<option value="3.0">B</option>
+				<option value="2.5">C+</option>
+				<option value="2.0">C</option>
+				<option value="1.5">D+</option>
+				<option value="1.0">D</option>
+				<option value="0.0">F</option></select></td>
+
+		</tr> 
+	
+	<tr>
+		
+			<td><input type="text" size="20" class = "module" required></td>
+			
+			<td><input type="number" min="1" max="30" size="5" class="credithours" required></td>
+			
+			<td><select class="grade" required>
+				<option value="-1"> Select </option>
+				<option value="4.0">A</option>
+				<option value="3.5">B+</option>
+				<option value="3.0">B</option>
+				<option value="2.5">C+</option>
+				<option value="2.0">C</option>
+				<option value="1.5">D+</option>
+				<option value="1.0">D</option>
+				<option value="0.0">F</option></select></td>
+
+		</tr> 
+	
+	
+	
+	
+	</tbody>
+	</table>
+	</form>
+	
+
+	
+	<input type="button" value="Calculate GPA" onclick="GPACal()">
+	
+	<input type="button" value="Module affecting grades" onclick="affectGPA()">
+	
+	<br>
+
+	<input type="button" value="Add Module" onclick="addRow()">
+	
+	<input type="button" value="Remove Module" onclick="removeRow()">
+	
+	
+
+	
+
+</div>
+
+
+
+
+<div id="myModalz" class="modal">
+	<div id = "showGPA">
+		<p id="GPA">
+		GPA:
+		</p>
+		
+		<p id="cGPAs">
+		
+		</p>
+		
+		<button class="close" onclick="closeModalz()">Close</button>
+	</div>
+</div>	
+
+<div id="myModal" class="modal"> 	
+	<div id="affect">
+		
+		<p id="">
+		The module pulling your grade down the most is:
+		</p>
+		
+		<p id="affectGPAz">
+		
+		</p>
+		
+		<button class="close" onclick="closeModal()">Close</button>
+		
+	</div>
+</div>	
+
+
+
+<div id="explanation" class="flex">
+	<h4> How does this work? </h4>
+	<p>Basically, you just have to key in your grades, 
+	<br>afterwards, we will calculate your GPA. 
+	<br>Then we will tell you which module is pulling your 
+	<br>GPA down currently, based on your grades. For  
+	<br>example, you are getting a C+ grade in a 4 
+	<br>credit module, but a C grade in a 2 credit module.
+	<br>The page will tell you that the 4 credit module is
+	<br>more important.
+	<br>
+	<br>Please do not key in Pass/Fail modules as 
+	<br>they do not affect your GPA.</p>
+</div> 
+</div>
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>
