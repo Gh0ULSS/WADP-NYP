@@ -1,0 +1,51 @@
+html {
+    font-size: 1em;
+}
+.loginform p {
+    padding: 0;
+    margin: 0;
+}
+.loginform  {
+    padding-top:100px;
+    margin-left:30%;
+    margin-right:20%;
+    margin:auto;
+}
+label {
+    
+    color: #999;
+}
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table;
+}
+.cf:after {
+
+}
+.cf {
+    *zoom: 1;
+}
+:focus {
+    outline: 0;
+}
+.loginform input:not([type=submit]) {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+fieldset { 
+	padding: 70px;
+	border-radius: 20px ;
+	background-color:rgb(230, 230, 230);
+	margin:auto;
+	margin-bottom:4%;
+	width:300px;
+	height:200px;
+}
+input{
+	margin: 10px;
+	
+
+

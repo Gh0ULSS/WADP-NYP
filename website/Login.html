@@ -1,0 +1,161 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="structure.css">
+<link rel="stylesheet" href="LoginStyle.css">
+<title> Login </title>
+
+  
+</head>
+
+<header>
+    <script language = "JavaScript">
+
+
+// check if stored data from register-form is equal to entered data in the   login-form
+function check() {
+
+    // stored data from the register-form
+    var storedName = localStorage.getItem('nameRegister');
+    var storedPw = localStorage.getItem('pwRegister');
+
+    // entered data from the login-form
+    var userName = document.getElementById('userid');
+    var userPw = document.getElementById('userpw');
+
+    // check if stored data from register-form is equal to data from login form
+    if(userName.value == storedName && userPw.value == storedPw){ 
+      
+        alert('Welcome!');
+        window.location.href = "home.html";
+    }
+    else{ 
+        alert('Username or Password incorrect! Try again!');
+    }}
+    </script>
+
+<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../images/title.png">
+	<img class="logos" id="logo" src="../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="home.html"style="color:rgb(238, 199, 199);">HOME</a></li>
+			<li><a href="content/tips.html">TIPS</a>
+				<ul>
+					<li><a href="content/tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="content/tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="content/tipscontent/planning.html">Planning</a></li>
+					<li><a href="content/tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="content/toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="content/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="content/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="content/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="content/timetable.html">TIMETABLE</a></li>
+			<li><a href="content/focus.html">FOCUS</a></li>
+			<li><a href="content/faq.html">FAQ</a>
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="content/faq.html">Frequently Asked Questions</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../images/banner1.jpg">
+		<img class="banner" src="../images/banner2.jpg">
+		<img class="banner" src="../images/banner3.png">
+		<img class="banner" src="../images/banner4.png">
+		<img class="banner" src="../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+
+
+
+<div>
+    <body>
+
+<!--- FILL IN YOUR CODES BELOW --->
+<div class="form">
+<section class="loginform">
+<form name="myform" >
+	<fieldset>
+    <p>
+        <label for="username">ID</label>
+        <input type="text" name="userid" id="userid" required></li>
+	</p>
+     <p>
+		<label for="password">PW</label>
+        <input type="password" name="userpw" id="userpw" required></li>
+    </p>
+	<p>
+		
+        <input type="button" onclick="check()" value="Login" />
+		<input  type="button" value="Register" onclick="location.href='Register.html';"/> 
+	</p>
+
+	</fieldset>
+</form>
+</section>
+</div>
+
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+<!--END HERE-->
+
+</body>
+
+
+
+
+
+</html>

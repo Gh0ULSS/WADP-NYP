@@ -1,0 +1,210 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="structure.css">
+
+<link rel="stylesheet" href="home.css">
+
+<title> Home </title>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../images/title.png">
+	<img class="logos" id="logo" src="../images/logo.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href='#' style="color:rgb(238, 199, 199);">HOME</a></li>
+			<li><a href="content/tips.html">TIPS</a>
+				<ul>
+					<li><a href="content/tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="content/tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="content/tipscontent/planning.html">Planning</a></li>
+					<li><a href="content/tipscontent/procrastination.html" >Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="content/toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="content/toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="content/toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="content/toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="content/timetable.html">TIMETABLE</a></li>
+			<li><a href="content/focus.html">FOCUS</a></li>
+			<li><a href="content/faq.html">FAQ</a>
+				<ul>
+					<li><a href="content/aboutus.html">About Us</a></li>
+					<li><a href="content/faq.html">Frequently Asked Questions</a></li>
+					<li><a href="content/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../images/banner1.jpg">
+		<img class="banner" src="../images/banner2.jpg">
+		<img class="banner" src="../images/banner3.png">
+		<img class="banner" src="../images/banner4.png">
+		<img class="banner" src="../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+<body>
+
+<h2 class="headd">Why Should I Use TimerCramer?</h2>
+
+<table id="h">
+	<tr>
+
+		<td class="d"><h3>Hello</h3>
+		<p class="a">Hello, TimerCramer will help you solve your time management problems.
+				   TimerCramer is not only easy to work with, it is also user-friendly. 
+				   We pride ourselves on reliable communication with our users.
+		</p>
+		</td>
+
+
+
+
+		<td class="d"><h3>Manage Time</h3>
+		<p class="a">Ever had issues managing your time? Ever felt like giving 
+				  up just because you just could not start? Fret not, we'll help you.
+		</p><br>
+		</td>
+
+
+	<td class="d"><h3> You're In Control</h3>
+	<p class="a">With our tools in the toolkits, tips, a timetable generator and a
+			   a page to help you calculate your GPA, you'll be able to customise 
+			   what you want to do with your time and be able to manage time 
+			   perfectly.
+	</p>
+	</td>
+	</tr>
+</table>
+
+
+<div id="loginz">
+
+<a id ="logins" href="Login.html"> Login/Register Here </a>
+
+
+</div>
+
+
+<div>
+
+<h2 class="headd">What we have to offer</h2>
+<table id="c">
+	<tr style="border-bottom:solid #cccccc;">	
+		
+		<td class="b">
+			<a class="directoryz" href="content/tips.html"><p>TIPS</p>
+			<p> On this page, you are able to find various different tips
+				on how to manage time efficiently, stop procrastination, plan
+				your schedule well and how to multitask effortlessly.</p></a>
+		</td>
+		
+		<td class="b"><img class="directory" src="../images/home1.png"></td>
+		
+	</tr>
+	
+	<tr style="border-bottom:solid #cccccc;">
+		
+		<td class="b"><img class="directory" src="../images/home2.png"></td>
+		<td class="b"><a class="directoryz" href="content/toolkit.html"><p>TOOLKITS</p>
+					<p>When you enter the toolkits page, there are different tools avaliable to use.
+					   Tools such as the daily assignment checklist will help you keep track 
+					   of your assignments.</p></a>
+		</td>
+		
+	</tr>
+	
+	<tr style="border-bottom:solid #cccccc;">
+		
+		<td class="b"><a class="directoryz" href="content/timetable.html"><p>TIMETABLE</p>
+		<p>With this page, you are able to customise a timetable so that you can better
+		manage your time. You can choose modules that you feel are the most important
+		and the page will generate a timetable for you.</p>
+		</a>
+		</td>
+		<td class="b"><img class="directory" src="../images/home3.png"></td>
+		
+	</tr>
+	<tr>
+		
+		<td class="b"><img class="directory" src="../images/home4.png"></td>
+		<td class="b"><a class="directoryz" href="content/focus.html"><p>FOCUS</p>
+		<p>This page will help you calculate your GPA. It will also tell you
+		which module is currently pulling your grades down. By doing so, you 
+		are able to prioritise which modules to spend your time on to improve them.</p></a>
+		</td>
+		
+	</tr>
+
+	
+
+</table>
+</div>
+
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+
+
+
+
+<!--END HERE-->
+
+</body>
+
+
+
+
+
+</html>

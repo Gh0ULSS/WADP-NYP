@@ -1,0 +1,111 @@
+table#c {
+	padding:1%;
+	margin:auto;
+	border-collapse:collapse;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
+
+td.b {
+	height:400px;
+	width:500px;
+	text-align:center;
+	background-color:rgba(230, 230, 230,0.6);
+}
+
+.directoryz {
+	text-decoration:none;
+	font-family:Arial;
+	color:gray;
+	font-size:1.2em;
+	text-align:center;
+}
+
+.directoryz:hover {
+	color:rgb(238, 199, 199);
+}
+
+.directory {
+	
+	width:270px;
+	height:270px;
+}
+
+td:nth-child(2) {
+	border-left:solid #cccccc;
+}
+
+
+
+/*belowBanner*/
+
+h2 { 
+	text-align:center;
+	
+}
+
+
+.d {
+	height:300px;
+	width:400px;
+	background-color:rgba(204, 204, 204,0.6);
+	
+}
+
+.d:nth-child(n+2){
+	border-left:solid #cccccc;
+}
+
+	
+.headd {
+	font-family:Arial;
+	color:gray;
+}
+
+.a { 
+	font-family:Arial;
+	text-align:center;
+	font-size:0.9em;
+}
+
+h3 {
+	font-size:1.3em;
+	text-align:center;
+	font-family:Arial;
+	font-weight:normal;
+}
+
+table#h {
+	margin:auto;
+	border-collapse:collapse;
+}
+
+/*Login*/
+
+#logins {
+	text-decoration:none;
+	color:black;
+	font-size:1.3em;
+	
+}
+
+#loginz {
+	
+	border-radius:50px;
+	margin:auto;
+	width:200px;
+	margin-bottom:3%;
+	margin-top:3%;
+	text-align:center;
+	background-color:white;
+	padding:2%;
+}
+
+#loginz:hover {
+	background-color:rgb(242, 242, 242);
+}
+
+td {
+	padding:2%;
+}

@@ -1,0 +1,145 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="structure.css">
+<link rel="stylesheet" href="LoginStyle.css">
+
+<title> Register </title>
+
+</head>
+
+<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../images/title.png">
+	<img class="logos" id="logo" src="../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="home.html" style="color:rgb(238, 199, 199);">HOME</a></li>
+			<li><a href="content/tips.html" >TIPS</a>
+				<ul>
+					<li><a href="content/tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="content/tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="content/tipscontent/planning.html">Planning</a></li>
+					<li><a href="content/tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="content/toolkit.html ">TOOLKITS</a>
+				<ul>
+				<li><a href="content/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="content/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="content/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="content/timetable.html">TIMETABLE</a></li>
+			<li><a href="content/focus.html">FOCUS</a></li>
+			<li><a href="content/faq.html">FAQ</a>
+				<ul>
+					<li><a href="content/faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="content/faq.html">Frequently Asked Questions</a></li>
+					<li><a href="content/faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../images/banner1.jpg">
+		<img class="banner" src="../images/banner2.jpg">
+		<img class="banner" src="../images/banner3.png">
+		<img class="banner" src="../images/banner4.png">
+		<img class="banner" src="../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+<body>
+
+<!--- FILL IN YOUR CODES BELOW --->
+<div class="form">
+<section class="loginform">
+<form name="myform" >
+	<fieldset>
+    <input id="nameRegister" type="text" placeholder="Email"/>
+    <input id="pwRegister" type="password" placeholder="Password"/>
+    <input id="register" type="submit" value="Register" onClick="store()"/>
+	<input id="login" type="button" value="Back to Login Page"  onclick="location.href='Login.html';" />
+
+	</fieldset>
+</form>
+</section>
+</div>
+
+
+
+
+
+     <script>
+// Name and Password from the register-form
+
+
+
+// storing input from register-form
+function store() {
+
+	var nameRegister = document.getElementById('nameRegister');
+    localStorage.setItem('nameRegister', nameRegister.value);
+	var pwRegister = document.getElementById('pwRegister');
+    localStorage.setItem('pwRegister', pwRegister.value);
+    alert('Registration Successful!');
+}
+
+</script>
+ <footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+
+<body>
+
+<div>
+
+<!--END HERE-->
+
+</body>
+
+
+
+
+
+</html>
