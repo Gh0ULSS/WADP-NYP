@@ -1,0 +1,87 @@
+
+/*YOUR CSS*/
+
+h1 {
+	
+	position: relative;
+	display: inline-block;
+	padding-top: 20px;
+	font-size: 1.8em;
+	float: left;
+	text-align: center;
+	width: 65%;
+	color: #800000;
+	margin-left: 200px;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #2E64FE;
+	
+}
+
+
+
+h4 {
+	font-family: Papyrus;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+
+#wrapper {
+padding: 2.5%;
+margin:7.8%;
+font-size:24px;
+font-weight:bold;
+background-color:#fff;
+opacity:0.7;
+width:79%;
+height:445px;
+float: right;
+margin-top:0%
+
+}
+
+
+ 
+
+#clock{
+	float: right;
+	display: inline-block;
+	margin-top:2%;
+}
+
+table, td, th {
+    border: 4px solid #01DFD7;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+#time th {
+	font-family: Rockwell;
+}
+
+#mon th {
+	font-family: Rockwell;
+}
+
+#tues th {
+	font-family: Rockwell;
+}
+
+#wed th {
+	font-family: Rockwell;
+}
+
+#thur th {
+	font-family: Rockwell;
+}
+
+#fri th {
+	font-family: Rockwell;
+}

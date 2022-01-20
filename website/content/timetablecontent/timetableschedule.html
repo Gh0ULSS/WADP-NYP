@@ -1,0 +1,4320 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="../../structure.css">
+<link rel="stylesheet" href="timetableschedule.css">
+<title> TIMETABLE SCHEDULE</title>
+
+<script>
+function printContent(div1){
+	var restorepage = document.body.innerHTML;
+	var printcontent = document.getElementById(div1).innerHTML;
+	document.body.innerHTML = printcontent;
+	window.print();
+	document.body.innerHTML = restorepage;
+}
+</script>
+
+
+</head>
+
+<header>
+<body>
+
+
+<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotimetable.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html">TIPS</a>
+				<ul>
+					<li><a href="../tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="../tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="../tipscontent/planning.html">Planning</a></li>
+					<li><a href="../tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkits.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html" style="color:rgb(238, 199, 199);">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	</nav>
+	
+		<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner6.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+		
+
+	</div>
+	
+	<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+	
+</header> 
+
+
+<h1>TIMETABLE MADE FOR YOU</h1>
+
+
+
+<div id = "wrapper">
+
+
+
+<div id = "div1">
+<h4>Your Generated Personal TimeTable:</h4>
+<script type="text/javascript">
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) 
+{
+	formData = formData.replace("+", " ");
+	formData = formData.replace("=", "");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+
+
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+function displayTime() 
+{
+		sessionStorage.What_time_do_you_usually_reach_home = formArray[0];
+		sessionStorage.How_many_hours_a_day_are_you_willing_to_commit_to_do_school_work = formArray[1];
+		
+}
+displayTime()
+
+
+var randomNum = Math.floor(Math.random()*17)+1;
+document.write("This week is: " + randomNum);
+
+
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+function time1()
+{
+	if (formArray[0] == " 12.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("12.00pm-12.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("12.00pm-12.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("12.00pm-12.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("12.00pm-12.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("12.00pm-13.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("12.00pm-13.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("12.00pm-13.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("12.00pm-13.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("12.00pm-13.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("12.00pm-13.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("12.00pm-14.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->	
+	else if (formArray[0] == " 13.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("13.00pm-13.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("13.00pm-13.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("13.00pm-13.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("13.00pm-13.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("13.00pm-14.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("13.00pm-14.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("13.00pm-14.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("13.00pm-14.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("13.00pm-14.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("13.00pm-14.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("13.00pm-15.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 14.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("14.00pm-14.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("14.00pm-14.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("14.00pm-14.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("14.00pm-14.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("14.00pm-15.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("14.00pm-15.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("14.00pm-15.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("14.00pm-15.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("14.00pm-15.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("14.00pm-15.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("14.00pm-16.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->	
+	else if (formArray[0] == " 15.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("15.00pm-15.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("15.00pm-15.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("15.00pm-15.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("15.00pm-15.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("15.00pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("15.00pm-16.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("15.00pm-16.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("15.00pm-16.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("15.00pm-16.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("15.00pm-16.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("15.00pm-17.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 16.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("16.00pm-16.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("16.00pm-16.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("16.00pm-16.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("16.00pm-16.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("16.00pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("16.00pm-17.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("16.00pm-17.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("16.00pm-17.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("16.00pm-17.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("16.00pm-17.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("16.00pm-18.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 17.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("17.00pm-17.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("17.00pm-17.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("17.00pm-17.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("17.00pm-17.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("17.00pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("17.00pm-18.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("17.00pm-18.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("17.00pm-18.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("17.00pm-18.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("17.00pm-18.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("17.00pm-19.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 18.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("18.00pm-18.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("18.00pm-18.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("18.00pm-18.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("18.00pm-18.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("18.00pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("18.00pm-19.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("18.00pm-19.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("18.00pm-19.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("18.00pm-19.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("18.00pm-19.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("18.00pm-20.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 19.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("19.00pm-19.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("19.00pm-19.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("19.00pm-19.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("19.00pm-19.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("19.00pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("19.00pm-20.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("19.00pm-20.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("19.00pm-20.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("19.00pm-20.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("19.00pm-20.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("19.00pm-21.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 1 -->
+	else if (formArray[0] == " 20.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("20.00pm-20.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("20.00pm-20.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("20.00pm-20.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("20.00pm-20.50pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("20.00pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("20.00pm-21.10pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("20.00pm-21.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("20.00pm-21.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("20.00pm-21.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("20.00pm-21.50pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("20.00pm-22.00pm")		
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+function time2()
+{
+	if (formArray[0] == " 12.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("12.20pm-12.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("12.30pm-13.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("12.40pm-13.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("12.50pm-13.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("13.00pm-14.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("13.10pm-14.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("13.20pm-14.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("13.30pm-15.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("13.40pm-15.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("13.50pm-15.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("14.00pm-16.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->	
+	else if (formArray[0] == " 13.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("13.20pm-13.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("13.30pm-14.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("13.40pm-14.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("13.50pm-14.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("14.00pm-15.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("14.10pm-15.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("14.20pm-15.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("14.30pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("14.40pm-16.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("14.50pm-16.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("15.00pm-17.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+	else if (formArray[0] == " 14.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("14.20pm-14.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("14.30pm-15.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("14.40pm-15.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("14.50pm-15.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("15.00pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("15.10pm-16.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("15.20pm-16.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("15.30pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("15.40pm-17.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("15.50pm-17.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("16.00pm-18.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+	else if (formArray[0] == " 15.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("15.20pm-15.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("15.30pm-16.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("15.40pm-16.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("15.50pm-16.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("16.00pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("16.10pm-17.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("16.20pm-17.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("16.30pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("16.40pm-18.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("16.50pm-18.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("17.00pm-19.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+	else if (formArray[0] == " 16.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("16.20pm-16.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("16.30pm-17.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("16.40pm-17.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("16.50pm-17.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("17.00pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("17.10pm-18.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("17.20pm-18.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("17.30pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("17.40pm-19.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("17.50pm-19.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("18.00pm-20.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+	else if (formArray[0] == " 17.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("17.20pm-17.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("17.30pm-18.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("17.40pm-18.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("17.50pm-18.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("18.00pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("18.10pm-19.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("18.20pm-19.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("18.30pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("18.40pm-20.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("18.50pm-20.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("19.00pm-21.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 2 -->
+	else if (formArray[0] == " 18.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("18.20pm-18.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("18.30pm-19.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("18.40pm-19.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("18.50pm-19.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("19.00pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("19.10pm-20.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("19.20pm-20.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("19.30pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("19.40pm-21.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("19.50pm-21.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("20.00pm-22.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->	
+	else if (formArray[0] == " 19.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("19.20pm-19.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("19.30pm-20.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("19.40pm-20.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("19.50pm-20.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("20.00pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("20.10pm-21.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("20.20pm-21.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("20.30pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("20.40pm-22.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("20.50pm-22.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("21.00pm-23.00pm")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 2 -->	
+	else if (formArray[0] == " 20.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("20.20pm-20.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("20.30pm-21.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("20.40pm-21.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("20.50pm-21.40pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("21.00pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("21.10pm-22.20pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("21.20pm-22.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("21.30pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("21.40pm-23.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("21.50pm-23.40pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("22.00pm-00.00am")		
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+function time3()
+{
+	if (formArray[0] == " 12.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("12.40pm-13.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("13.00pm-13.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("13.20pm-14.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("13.40pm-14.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("14.00pm-15.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("14.20pm-15.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("14.40pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("15.00pm-16.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("15.20pm-17.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("15.40pm-17.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("16.00pm-18.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 13.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("13.40pm-14.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("14.00pm-14.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("14.20pm-15.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("14.40pm-15.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("15.00pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("15.20pm-16.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("15.40pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("16.00pm-17.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("16.20pm-18.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("16.40pm-18.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("17.00pm-19.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 14.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("14.40pm-15.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("15.00pm-15.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("15.20pm-16.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("15.40pm-16.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("16.00pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("16.20pm-17.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("16.40pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("17.00pm-18.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("17.20pm-19.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("17.40pm-19.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("18.00pm-20.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 15.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("15.40pm-16.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("16.00pm-16.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("16.20pm-17.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("16.40pm-17.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("17.00pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("17.20pm-18.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("17.40pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("18.00pm-19.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("18.20pm-20.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("18.40pm-20.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("19.00pm-21.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 16.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("16.40pm-17.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("17.00pm-17.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("17.20pm-18.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("17.40pm-18.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("18.00pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("18.20pm-19.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("18.40pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("19.00pm-20.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("19.20pm-21.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("19.40pm-21.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("20.00pm-22.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 17.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("17.40pm-18.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("18.00pm-18.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("18.20pm-19.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("18.40pm-19.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("19.00pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("19.20pm-20.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("19.40pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("20.00pm-21.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("20.20pm-22.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("20.40pm-22.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("21.00pm-23.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 18.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("18.40pm-19.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("19.00pm-19.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("19.20pm-20.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("19.40pm-20.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("20.00pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("20.20pm-21.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("20.40pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("21.00pm-22.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("21.20pm-23.00pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("21.40pm-23.30pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("22.00pm-00.00am")		
+		}
+	}
+
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 19.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("19.40pm-20.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("20.00pm-20.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("20.20pm-21.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("20.40pm-21.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("21.00pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("21.20pm-22.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("21.40pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("22.00pm-23.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("22.20pm-00.00am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("22.40pm-00.30am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("23.00pm-1.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 3 -->
+	else if (formArray[0] == " 20.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("20.40pm-21.00pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("21.00pm-21.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("21.20pm-22.00pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("21.40pm-22.30pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("22.00pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("22.20pm-23.30pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("22.40pm-00.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("23.00pm-00.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("23.20pm-1.00am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("23.40pm-1.30am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("00.00am-2.00am")		
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+function time4()
+{
+	if (formArray[0] == " 12.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("13.00pm-13.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("13.30pm-14.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("14.00pm-14.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("14.30pm-15.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("15.00pm-16.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("15.30pm-16.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("16.00pm-17.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("16.30pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("17.00pm-18.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("17.30pm-19.20pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("18.00pm-20.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 13.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("14.00pm-14.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("14.30pm-15.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("15.00pm-15.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("15.30pm-16.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("16.00pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("16.30pm-17.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("17.00pm-18.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("17.30pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("18.00pm-19.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("18.30pm-20.20pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("19.00pm-21.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 14.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("15.00pm-15.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("15.30pm-16.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("16.00pm-16.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("16.30pm-17.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("17.00pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("17.30pm-18.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("18.00pm-19.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("18.30pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("19.00pm-20.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("19.30pm-21.20pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("20.00pm-22.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 15.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("16.00pm-16.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("16.30pm-17.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("17.00pm-17.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("17.30pm-18.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("18.00pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("18.30pm-19.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("19.00pm-20.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("19.30pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("20.00pm-21.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("20.30pm-22.20pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("21.00pm-23.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 16.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("17.00pm-17.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("17.30pm-18.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("18.00pm-18.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("18.30pm-19.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("19.00pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("19.30pm-20.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("20.00pm-21.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("20.30pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("21.00pm-22.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("21.30pm-23.20pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("22.00pm-00.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 17.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("18.00pm-18.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("18.30pm-19.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("19.00pm-19.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("19.30pm-20.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("20.00pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("20.30pm-21.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("21.00pm-22.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("21.30pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("22.00pm-23.40pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("22.30pm-00.20am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("23.00pm-1.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 18.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("19.00pm-19.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("19.30pm-20.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("20.00pm-20.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("20.30pm-21.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("21.00pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("21.30pm-22.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("22.00pm-23.20pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("22.30pm-00.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("23.00pm-00.40am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("23.30pm-1.20am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("00.00am-2.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 19.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("20.00pm-20.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("20.30pm-21.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("21.00pm-21.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("21.30pm-22.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("22.00pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("22.30pm-23.40pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("23.00pm-00.20am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("23.30pm-1.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("00.00am-1.40am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("00.30am-2.20am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("1.00am-3.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 4 -->
+	else if (formArray[0] == " 20.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("21.00pm-21.20pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("21.30pm-22.00pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("22.00pm-22.40pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("22.30pm-23.20pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("23.00pm-00.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("23.30pm-00.40am")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("00.00am-1.20am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("00.30am-2.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("1.00am-2.40am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("1.30am-3.20am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("2.00am-4.00am")		
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+function time5()
+{
+	if (formArray[0] == " 12.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("13.20pm-13.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("14.00pm-14.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("14.40pm-15.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("15.20pm-16.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("16.00pm-17.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("16.40pm-17.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("17.20pm-18.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("18.00pm-19.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("18.40pm-20.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("19.20pm-21.10pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("20.00pm-22.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 13.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("14.20pm-14.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("15.00pm-15.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("15.40pm-16.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("16.20pm-17.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("17.00pm-18.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("17.40pm-18.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("18.20pm-19.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("19.00pm-20.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("19.40pm-21.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("20.20pm-22.10pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("21.00pm-23.00pm")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 14.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("15.20pm-15.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("16.00pm-16.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("16.40pm-17.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("17.20pm-18.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("18.00pm-19.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("18.40pm-19.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("19.20pm-20.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("20.00pm-21.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("20.40pm-22.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("21.20pm-23.10pm")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("22.00pm-00.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 15.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("16.20pm-16.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("17.00pm-17.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("17.40pm-18.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("18.20pm-19.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("19.00pm-20.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("19.40pm-20.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("20.20pm-21.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("21.00pm-22.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("21.40pm-23.20pm")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("22.20pm-00.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("23.00pm-1.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 16.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("17.20pm-17.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("18.00pm-18.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("18.40pm-19.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("19.20pm-20.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("20.00pm-21.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("20.40pm-21.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("21.20pm-22.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("22.00pm-23.30pm")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("22.40pm-00.20am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("23.20pm-1.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("00.00am-2.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 17.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("18.20pm-18.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("19.00pm-19.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("19.40pm-20.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("20.20pm-21.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("21.00pm-22.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("21.40pm-22.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("22.20pm-23.40pm")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("23.00pm-00.30am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("23.40pm-1.20am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("00.20am-2.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("1.00am-3.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 18.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("19.20pm-19.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("20.00pm-20.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("20.40pm-21.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("21.20pm-22.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("22.00pm-23.00pm")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("22.40pm-23.50pm")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("23.20pm-00.40am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("00.00am-1.30am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("00.40am-2.20am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("1.20am-3.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("2.00am-4.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 19.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("20.20pm-20.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("21.00pm-21.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("21.40pm-22.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("22.20pm-23.10pm")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("23.00pm-00.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("23.40pm-00.50am")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("00.20am-1.40am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("1.00am-2.30am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("1.40am-3.20am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("2.20am-4.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("3.00am-5.00am")		
+		}
+	}
+	
+<!-- ============================================================FUNCTION FOR TIME 5 -->
+	else if (formArray[0] == " 20.00pm")
+	{
+		if (formArray[1] == " 20min")
+		{
+			document.write("21.20pm-21.40pm")
+		}
+		
+		else if (formArray[1] == " 30min")
+		{
+			document.write("22.00pm-22.30pm")
+		}
+		
+		else if (formArray[1] == " 40min")
+		{
+			document.write("22.40pm-23.20pm")
+		}		
+
+		else if (formArray[1] == " 50min")
+		{
+			document.write("23.20pm-00.10am")
+		}
+		
+		else if (formArray[1] == " 1hour")
+		{
+			document.write("00.00am-1.00am")		
+		}
+		
+		else if (formArray[1] == " 1hour10min")
+		{
+			document.write("00.40am-1.50am")		
+		}		
+		
+		else if (formArray[1] == " 1hour20min")
+		{
+			document.write("1.20am-2.40am")		
+		}
+		
+		else if (formArray[1] == " 1hour30min")
+		{
+			document.write("2.00am-3.30am")		
+		}
+		
+		else if (formArray[1] == " 1hour40min")
+		{
+			document.write("2.40am-4.20am")		
+		}
+
+		else if (formArray[1] == " 1hour50min")
+		{
+			document.write("3.20am-5.10am")		
+		}
+		
+		else if (formArray[1] == " 2hour")
+		{
+			document.write("4.00am-6.00am")		
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- =====================================================================ROW MONDAY -->	
+function task1()
+{
+	if (formArray[2] == " 1")
+	{
+		if (formArray[3] == "NA" ||formArray[3] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[3])
+		}
+	}
+	
+	else if (formArray[2] == " 2")
+	{
+		if (formArray[3] == "NA" ||formArray[3] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[3])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[3] == "NA" ||formArray[3] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[3])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[3] == "NA" ||formArray[3] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[3])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[3] == "NA" ||formArray[3] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[3])
+		}
+	}
+}
+
+<!-- =====================================================================ROW MONDAY -->		
+function task2()
+{
+	if (formArray[2] == " 2")
+	{
+		if (formArray[4] == "NA" ||formArray[4] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[4])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[4] == "NA" ||formArray[4] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[4])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[4] == "NA" ||formArray[4] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[4])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[4] == "NA" ||formArray[4] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[4])
+		}
+	}
+}
+
+<!-- =====================================================================ROW MONDAY -->
+function task3()
+{
+	if (formArray[2] == " 3")
+	{
+		if (formArray[5] == "NA" ||formArray[5] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[5])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[5] == "NA" ||formArray[5] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[5])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[5] == "NA" ||formArray[5] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[5])
+		}
+	}
+}
+
+<!-- =====================================================================ROW MONDAY -->
+function task4()
+{
+	if (formArray[2] == " 4")
+	{
+		if (formArray[6] == "NA" ||formArray[6] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[6])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[6] == "NA" ||formArray[6] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[6])
+		}
+	}
+}
+
+<!-- =====================================================================ROW MONDAY -->
+function task5()
+{
+	if (formArray[2] == " 5")
+	{
+		if (formArray[7] == "NA" ||formArray[7] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[7])
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- ====================================================================ROW TUESDAY -->
+function task6()
+{
+	if (formArray[2] == " 1")
+	{
+		if (formArray[4] == "NA" ||formArray[4] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[4])
+		}
+	}
+	
+	else if (formArray[2] == " 2")
+	{
+		if (formArray[5] == "NA" ||formArray[5] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[5])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[6] == "NA" ||formArray[6] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[6])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[7] == "NA" ||formArray[7] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[7])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[8] == "NA" ||formArray[8] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[8])
+		}
+	}
+}
+
+<!-- ====================================================================ROW TUESDAY -->
+function task7()
+{
+	if (formArray[2] == " 2")
+	{
+		if (formArray[6] == "NA" ||formArray[6] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[6])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[7] == "NA" ||formArray[7] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[7])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[8] == "NA" ||formArray[8] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[8])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[9] == "NA" ||formArray[9] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[9])
+		}
+	}
+}
+
+<!-- ====================================================================ROW TUESDAY -->
+function task8()
+{
+	if (formArray[2] == " 3")
+	{
+		if (formArray[8] == "NA" ||formArray[8] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[8])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[9] == "NA" ||formArray[9] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[9])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[10] == "NA" ||formArray[10] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[10])
+		}
+	}
+}
+
+<!-- ====================================================================ROW TUESDAY -->
+function task9()
+{
+	if (formArray[2] == " 4")
+	{
+		if (formArray[10] == "NA" ||formArray[10] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[10])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[11] == "NA" ||formArray[11] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[11])
+		}
+	}
+}
+
+<!-- ====================================================================ROW TUESDAY -->
+function task10()
+{
+	if (formArray[2] == " 5")
+	{
+		if (formArray[12] == "NA" ||formArray[12] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[12])
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- ==================================================================ROW WEDNESDAY -->
+function task11()
+{
+	if (formArray[2] == " 1")
+	{
+		if (formArray[5] == "NA" ||formArray[5] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[5])
+		}
+	}
+	
+	else if (formArray[2] == " 2")
+	{
+		if (formArray[7] == "NA" ||formArray[7] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[7])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[9] == "NA" ||formArray[9] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[9])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[11] == "NA" ||formArray[11] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[11])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[13] == "NA" ||formArray[13] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[13])
+		}
+	}
+}
+
+<!-- ==================================================================ROW WEDNESDAY -->
+function task12()
+{
+	if (formArray[2] == " 2")
+	{
+		if (formArray[8] == "NA" ||formArray[8] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[8])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[10] == "NA" ||formArray[10] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[10])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[12] == "NA" ||formArray[12] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[12])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[14] == "NA" ||formArray[14] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[14])
+		}
+	}
+}
+
+<!-- ==================================================================ROW WEDNESDAY -->
+function task13()
+{
+	if (formArray[2] == " 3")
+	{
+		if (formArray[11] == "NA" ||formArray[11] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[11])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[13] == "NA" ||formArray[13] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[13])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[15] == "NA" ||formArray[15] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[15])
+		}
+	}
+}
+
+<!-- ==================================================================ROW WEDNESDAY -->
+function task14()
+{
+	if (formArray[2] == " 4")
+	{
+		if (formArray[14] == "NA" ||formArray[14] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[14])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[16] == "NA" ||formArray[16] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[16])
+		}
+	}
+}
+
+<!-- ==================================================================ROW WEDNESDAY -->
+function task15()
+{
+	if (formArray[2] == " 5")
+	{
+		if (formArray[17] == "NA" ||formArray[17] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[17])
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- ===================================================================ROW THURSDAY -->
+function task16()
+{
+	if (formArray[2] == " 1")
+	{
+		if (formArray[6] == "NA" ||formArray[6] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[6])
+		}
+	}
+	else if (formArray[2] == " 2")
+	{
+		if (formArray[9] == "NA" ||formArray[9] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[9])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[12] == "NA" ||formArray[12] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[12])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[15] == "NA" ||formArray[15] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[15])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[18] == "NA" ||formArray[18] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[18])
+		}
+	}
+}
+
+<!-- ===================================================================ROW THURSDAY -->
+function task17()
+{
+	if (formArray[2] == " 2")
+	{
+		if (formArray[10] == "NA" ||formArray[10] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[10])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[13] == "NA" ||formArray[13] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[13])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[16] == "NA" ||formArray[16] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[16])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[19] == "NA" ||formArray[19] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[19])
+		}
+	}
+}
+
+<!-- ===================================================================ROW THURSDAY -->
+function task18()
+{
+		if (formArray[2] == " 3")
+	{
+		if (formArray[14] == "NA" ||formArray[14] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[14])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[17] == "NA" ||formArray[17] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[17])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[20] == "NA" ||formArray[20] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[20])
+		}
+	}
+}
+
+<!-- ===================================================================ROW THURSDAY -->
+function task19()
+{
+	if (formArray[2] == " 4")
+	{
+		if (formArray[18] == "NA" ||formArray[18] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[18])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[21] == "NA" ||formArray[21] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[21])
+		}
+	}
+}
+
+<!-- ===================================================================ROW THURSDAY -->
+function task20()
+{
+	if (formArray[2] == " 5")
+	{
+		if (formArray[22] == "NA" ||formArray[22] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[22])
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+<!-- =====================================================================ROW FRIDAY -->
+function task21()
+{
+	if (formArray[2] == " 1")
+	{
+		if (formArray[7] == "NA" ||formArray[7] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[7])
+		}
+	}
+	
+	else if (formArray[2] == " 2")
+	{
+		if (formArray[11] == "NA" ||formArray[11] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[11])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[15] == "NA" ||formArray[15] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[15])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[19] == "NA" ||formArray[19] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[19])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[23] == "NA" ||formArray[23] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[23])
+		}
+	}
+}
+
+<!-- =====================================================================ROW FRIDAY -->
+function task22()
+{
+	if (formArray[2] == " 2")
+	{
+		if (formArray[12] == "NA" ||formArray[12] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[12])
+		}
+	}
+	
+	else if (formArray[2] == " 3")
+	{
+		if (formArray[16] == "NA" ||formArray[16] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[16])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[20] == "NA" ||formArray[20] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[20])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[24] == "NA" ||formArray[24] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[24])
+		}
+	}
+}
+
+<!-- =====================================================================ROW FRIDAY -->
+function task23()
+{
+	
+	if (formArray[2] == " 3")
+	{
+		if (formArray[17] == "NA" ||formArray[17] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[17])
+		}
+	}
+	
+	else if (formArray[2] == " 4")
+	{
+		if (formArray[21] == "NA" ||formArray[21] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[21])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[25] == "NA" ||formArray[25] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[25])
+		}
+	}
+}
+
+<!-- =====================================================================ROW FRIDAY -->
+function task24()
+{
+	if (formArray[2] == " 4")
+	{
+		if (formArray[22] == "NA" ||formArray[22] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[22])
+		}
+	}
+	
+	else if (formArray[2] == " 5")
+	{
+		if (formArray[26] == "NA" ||formArray[26] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[26])
+		}
+	}
+}
+
+<!-- =====================================================================ROW FRIDAY -->
+function task25()
+{
+	if (formArray[2] == " 5")
+	{
+		if (formArray[27] == "NA" ||formArray[27] == "na" )
+		{
+		document.write( )
+		}
+		
+		else
+		{
+		document.write(formArray[27])
+		}
+	}
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+</script>
+
+
+<p>
+
+<table id="Table">
+
+<!-- =======================================================================ROW TIME -->
+<tr id="time">
+	<th>
+	Days/Time
+	</th>
+	<th>
+		<script>
+			time1()
+		</script>
+	</th>
+	<th>
+		<script>
+			time2()
+		</script>
+	</th>
+	<th>
+		<script>
+			time3()
+		</script>
+	</th>
+	<th>
+		<script>
+			time4()
+		</script>
+	</th>
+	<th>
+		<script>
+			time5()
+		</script>
+	</th>
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+	
+<!-- =====================================================================ROW MONDAY -->	
+<tr id="mon">
+	<th>
+		Monday
+	</th>
+    <th>
+		<script>
+			task1()
+		</script>
+	</th>
+	<th>
+		<script>
+			task2()
+		</script>
+	</th>
+	<th>
+		<script>
+			task3()
+		</script>
+	</th>
+	<th>
+		<script>
+			task4()
+		</script>
+	</th>
+	<th>
+		<script>
+			task5()
+		</script>
+	</th>
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+	
+	
+<!-- ====================================================================ROW TUESDAY -->	
+<tr id="tues">
+	<th>
+		Tuesday
+	</th>
+    <th>
+		<script>
+			task6()
+		</script>
+	</th>
+	<th>
+		<script>
+			task7()
+		</script>
+	</th>
+	<th>
+		<script>
+			task8()
+		</script>
+	</th>
+	<th>
+		<script>
+			task9()
+		</script>
+	</th>
+	<th>
+		<script>
+			task10()
+		</script>
+	</th>
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+	
+	
+<!-- ==================================================================ROW WEDNESDAY -->	
+<tr id="wed">
+	<th>
+		Wednesday
+	</th>
+    <th>
+		<script>
+			task11()
+		</script>
+	</th>
+	<th>
+		<script>
+			task12()
+		</script>
+	</th>
+	<th>
+		<script>
+			task13()
+		</script>
+	</th>
+	<th>
+		<script>
+			task14()
+		</script>
+	</th>
+	<th>
+		<script>
+			task15()
+		</script>
+	</th>	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+	
+	
+<!-- ===================================================================ROW THURSDAY -->
+<tr id="thur">
+	<th>
+		Thursday
+	</th>
+    <th>
+		<script>
+			task16()
+		</script>
+	</th>
+	<th>
+		<script>
+			task17()
+		</script>
+	</th>
+	<th>
+		<script>
+			task18()
+		</script>
+	</th>
+	<th>
+		<script>
+			task19()
+		</script>
+	</th>
+	<th>
+		<script>
+			task20()
+		</script>
+	</th>	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+	
+<!-- =====================================================================ROW FRIDAY -->	
+<tr id="fri">
+	<th>
+		Friday
+	</th>
+    <th>
+		<script>
+			task21()
+		</script>
+	</th>
+	<th>
+		<script>
+			task22()
+		</script>
+	</th>
+	<th>
+		<script>
+			task23()
+		</script>
+	</th>
+	<th>
+		<script>
+			task24()
+		</script>
+	</th>
+	<th>
+		<script>
+			task25()
+		</script>
+	</th>	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+</table>
+
+
+<button onclick="printContent('div1')">Print this page</button>	
+
+
+</div>
+</div>
+
+<script>
+<!-- ===================================================================CLEAR DEFINE -->
+var time = document.getElementById("time");
+var mon = document.getElementById("mon");	
+var tues = document.getElementById("tues");
+var wed = document.getElementById("wed");
+var wed = document.getElementById("wed");	
+var thur = document.getElementById("thur");
+var fri = document.getElementById("fri");
+
+<!-- ====================================================================CELL 2 CLEAR-->
+function clear2()
+{
+	time.deleteCell(2);
+	mon.deleteCell(2);
+	tues.deleteCell(2);
+	wed.deleteCell(2);
+	thur.deleteCell(2);
+	fri.deleteCell(2);
+}
+
+<!-- ====================================================================CELL 3 CLEAR-->
+function clear3()
+{
+	time.deleteCell(3);
+	mon.deleteCell(3);
+	tues.deleteCell(3);
+	wed.deleteCell(3);
+	thur.deleteCell(3);
+	fri.deleteCell(3);
+}
+
+<!-- ====================================================================CELL 4 CLEAR-->
+function clear4()
+{
+	time.deleteCell(4);
+	mon.deleteCell(4);
+	tues.deleteCell(4);
+	wed.deleteCell(4);
+	thur.deleteCell(4);
+	fri.deleteCell(4);
+}
+
+<!-- ====================================================================CELL 5 CLEAR-->
+function clear5()
+{
+	time.deleteCell(5);
+    mon.deleteCell(5);
+    tues.deleteCell(5);
+    wed.deleteCell(5);
+    thur.deleteCell(5);
+    fri.deleteCell(5);
+}
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ====================================================================CELL 1 CLEAR-->
+if (formArray[2] == " 1")
+{
+	clear5()
+	clear4()
+	clear3()
+	clear2()
+
+}	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ===========================================================CELL 2 CLEAR CHECKER---->
+else if (formArray[2] == " 2")
+{
+	clear5()
+	clear4()
+	clear3()
+	
+	<!-- =================================================EMPTY CELL 2 CLEAR CHECKER---->	
+	if ((formArray[4] == "NA" ||formArray[4] == "na" ) && 
+	(formArray[6] == "NA" ||formArray[6] == "na" ) && 
+	(formArray[8] == "NA" ||formArray[8] == "na" ) && 
+	(formArray[10] == "NA" ||formArray[10] == "na" ) && 
+	(formArray[12] == "NA" ||formArray[12] == "na" )) 
+	{
+		clear2()
+	}
+}	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ===========================================================CELL 3 CLEAR CHECKER---->
+else if (formArray[2] == " 3")
+{	
+	clear5()
+	clear4()
+
+	<!-- =================================================EMPTY CELL 3 CLEAR CHECKER---->	
+	if ((formArray[5] == "NA" ||formArray[5] == "na" ) && 
+	(formArray[8] == "NA" ||formArray[8] == "na" ) && 
+	(formArray[11] == "NA" ||formArray[11] == "na" ) && 
+	(formArray[14] == "NA" ||formArray[14] == "na" ) && 
+	(formArray[17] == "NA" ||formArray[17] == "na" )) 
+	{
+		clear3()
+
+		<!-- =============================================EMPTY CELL 2 CLEAR CHECKER---->		
+		if ((formArray[4] == "NA" ||formArray[4] == "na" ) && 
+		(formArray[7] == "NA" ||formArray[7] == "na" ) && 
+		(formArray[10] == "NA" ||formArray[10] == "na" ) && 
+		(formArray[13] == "NA" ||formArray[13] == "na" ) && 
+		(formArray[16] == "NA" ||formArray[16] == "na" )) 
+		{
+			clear2()
+		}
+	}
+}	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->
+
+
+
+<!-- ===========================================================CELL 4 CLEAR CHECKER---->
+else if (formArray[2] == " 4")
+{
+	clear5()
+	
+	<!-- =================================================EMPTY CELL 4 CLEAR CHECKER---->
+	if ((formArray[6] == "NA" ||formArray[6] == "na" ) && 
+	(formArray[10] == "NA" ||formArray[10] == "na" ) && 
+	(formArray[14] == "NA" ||formArray[14] == "na" ) && 
+	(formArray[18] == "NA" ||formArray[18] == "na" ) && 
+	(formArray[22] == "NA" ||formArray[22] == "na" )) 
+	{
+		clear4()
+		
+		<!-- =============================================EMPTY CELL 3 CLEAR CHECKER---->	
+		if ((formArray[5] == "NA" ||formArray[5] == "na" ) && 
+		(formArray[9] == "NA" ||formArray[9] == "na" ) && 
+		(formArray[13] == "NA" ||formArray[13] == "na" ) && 
+		(formArray[17] == "NA" ||formArray[17] == "na" ) && 
+		(formArray[21] == "NA" ||formArray[21] == "na" )) 
+		{
+			clear3()
+			
+			<!-- =========================================EMPTY CELL 2 CLEAR CHECKER---->
+			if ((formArray[4] == "NA" ||formArray[4] == "na" ) && 
+			(formArray[8] == "NA" ||formArray[8] == "na" ) && 
+			(formArray[12] == "NA" ||formArray[12] == "na" ) && 
+			(formArray[16] == "NA" ||formArray[16] == "na" ) && 
+			(formArray[20] == "NA" ||formArray[20] == "na" )) 
+			{
+				clear2()
+			}
+		}
+	}	
+}	
+<!-- =============================================================================== -->
+<!-- =============================================================================== -->		
+
+</script>
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+</html>

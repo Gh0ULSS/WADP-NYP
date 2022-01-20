@@ -1,0 +1,136 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="cssforall.css">
+<link rel="stylesheet" href="../../structure.css">
+
+<title> Planning </title>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html" style="color:rgb(238, 199, 199);">TIPS</a>
+				<ul>
+					<li><a href="managing.html">Managing Time</a></li>
+					<li><a href="multitasking.html">Multitasking</a></li>
+					<li><a href="#" style="color:rgb(238, 199, 199);">Planning</a></li>
+					<li><a href="procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header>
+ 
+<body>
+
+
+<div id="transCover">
+	<h1 id="managetimeHeader">Planning</h1>
+    
+
+        <div id="sub2">
+
+
+		<p class="text"><b>1. Set realistic and achievable goals</b><br>
+		It's important to set goals that you can achieve.<br>
+		All sorts of people (for example, employers, parents, media, or society) can set unrealistic goals for you.<br>
+		They will often do this in ignorance of your own desires and ambitions.<br>
+		It's also possible to set goals that are too difficult because you might not appreciate either the obstacles in the way,<br>
+		or understand quite how much skill you need to develop to achieve a particular level of performance.<br>
+		In other words, setting high goals for yourself might demotivate you rather than being an inspiration for you.<br><br>
+		</p>
+		<p class = "text"><b>2. Learn to say "No".</b><br>
+		Making a lot of time commitments can teach us how to juggle various engagements and manage our time.<br>
+		This can be a great thing.<br>
+		However, you can easily take it too far. At some point, you need to learn to decline opportunities.<br>
+		People often overestimate themselves and take on more tasks then they can handle.<br>
+		This will causea large build up in stress due to time constrain and multiple deadlines to meet.<br>
+		Your objective should be to take on only those commitments that you know you have time for and that you truly care about.<br>
+		</p>
+		</div>
+	
+</div>
+
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>

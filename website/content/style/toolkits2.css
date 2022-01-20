@@ -1,0 +1,81 @@
+
+
+/* my part */
+
+.right {
+	background-color:rgb(245,245,245)
+	height:420px;
+	width:700px;
+	margin-top:-7px;
+	margin-right:950px;
+	position:relative;
+	border-radius:40px 10px 40px 10px;
+	
+}
+
+fieldset {
+	background-color:white;
+	opacity: 0.6;
+	float:right;
+	height:545px;
+	width:900px;
+	margin-top:50px;
+	margin-bottom:65px;
+	position:static;
+	border-radius: 40px 10px 40px 10px;
+	
+}
+
+ legend {
+	font-size:23px;
+	background-color: teal;
+	text-align:left;
+	margin-left:35px;
+	padding-left:10px;
+	padding-top: 5px;
+	font-family:calibri;
+	color: white;
+	width: 250px;
+	height:35px;
+	border-radius: 15px 2px 15px 2px;
+}
+
+#changecolor {
+	font-family:calibri;
+	font-size:25px;
+	margin-left:750px;
+	color:green;
+	
+}
+
+#columnchart_values{
+	margin-left:120px;
+	margin-top:20px;
+	
+}
+
+.right > p {
+	font-size:23px;
+	color: teal;
+	text-align:left;
+	margin-left:25px;
+
+}
+
+
+@media screen and (max-width:1450px) {
+	
+	.right {
+		margin-right:25px;
+		
+	}
+	
+	#right {
+		margin-right:13px;
+		
+	}
+	
+}
+
+
+

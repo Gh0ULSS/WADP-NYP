@@ -1,0 +1,62 @@
+
+/*YOUR CSS*/
+
+h1 {
+	
+	position: relative;
+	display: inline-block;
+	padding-top: 20px;
+	font-size: 1.8em;
+	float: left;
+	text-align: center;
+	width: 65%;
+	color: #800000;
+	margin-left: 250px;
+	margin-bottom: -30px;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #2E64FE;
+	
+}
+
+
+
+
+#wrapper {
+	margin:5%;
+	padding:5%;
+	font-size:1.5em;
+	font-weight:bold;
+	background-color:#fff;
+	opacity:0.7;
+	width:80%;
+	float: right;
+	
+}
+
+
+
+
+#border{
+	border-radius: 60px;
+	 border: 12px solid #58FAF4;
+	 background-color: white;
+	 width: 1000px;
+	 height: 1280px;
+	 margin: auto;
+	
+}
+
+body { 
+font-family: Verdana;
+
+}
+
+.picture {
+	display: none;
+}
+
+
+
+
+
+

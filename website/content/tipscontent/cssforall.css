@@ -1,0 +1,46 @@
+
+
+div#sub2 { 
+	background:white;
+	padding:5px;
+	display:inline-block;
+	margin:3%;
+	font-size:1.3em;
+}
+div#sub p {
+	font-family:Calibri;
+	font-size:0.9em;
+}
+div#transCover {
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	width:1200px;
+	background:rgba(255, 255, 255, .7);
+}
+
+
+h1 {
+	padding-left:2%;
+	padding-top:2%;
+	
+}
+
+
+
+/*transition*/
+
+p.text {
+	
+		height:25px;
+		-webkit-transition:height 2s;
+		overflow:hidden;
+		}
+		
+p.text:hover {
+		height:450px;
+
+	}
+	

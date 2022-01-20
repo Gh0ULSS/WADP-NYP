@@ -1,0 +1,105 @@
+
+.asd{
+	float:right;
+	font-family:Calibri;
+	width:35%;
+}
+
+#faq{
+	margin-top:1%;
+	margin-right:10%;
+}
+
+#enter{
+	float:right;
+	clear:right;
+	padding:1% 1% 1% 1%;
+	outline:0.1% solid grey;
+	margin-top:1%;
+	margin-right:8%;
+	margin-bottom:4%;
+}
+
+
+
+dt { 
+	color:black;
+	font-family:Calibri;
+	font-size:2em;
+	text-align:center;
+
+}
+
+#head{
+	margin-top:-10%;
+}
+
+h1 {
+	text-align:center;
+	padding-top:12.5%;
+	text-decoration:underline;
+	color:black;
+	font-family:Calibri;
+	color:#800000;
+	}
+
+#contact{
+	text-align:left;
+	color:gray;
+	text-decoration:none;
+	margin-left:-11%;
+	margin-top:-11%;
+	
+}
+h3{
+	margin-left:-9%;
+	color:gray;
+}
+
+#link {
+	width:68%;
+	background-color:rgba(100%,100%,100%,0.7);
+	padding-bottom:-10%;
+	padding-left:10%;
+	padding-right:1%;
+	margin-right:5%;
+	margin-bottom:1%;
+}
+
+/*DO NOT TOUCH*/
+
+
+#comment{
+	width:80%;
+}
+
+
+input[type=submit]:hover{
+	
+	color:rgb(238, 199, 199);
+}
+
+input[type=reset]:hover{
+	
+	color:rgb(238, 199, 199);
+}
+
+input[type=submit] { 
+	border-radius:1px;
+	border:0;
+	background-color:gray;
+	color:black;
+	padding: 2px;
+	font-family:Calibri;
+	font-size:1.2em;
+}
+
+input[type=reset]{
+	border-radius:1px;
+	border:0;
+	background-color:gray;
+	color:black;
+	padding: 2px;
+	font-family:Calibri;
+	font-size:1.2em;
+}

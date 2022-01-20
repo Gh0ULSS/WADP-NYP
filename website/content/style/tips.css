@@ -1,0 +1,47 @@
+table {
+	margin:auto;
+	border-collapse:collapse;
+	margin-top:2%;
+	margin-bottom:2%;
+	
+}
+
+td {
+	background-color:rgba(230, 230, 230,0.6);
+	text-align:center;
+	padding:2%;
+	height:350px;
+	width:500px;
+}
+
+td:nth-child(n+2){
+	border-left:solid #cccccc;
+}
+
+.directoryz {
+text-decoration:none;
+	font-family:Arial;
+	color:gray;
+	font-size:1.2em;
+	text-align:center;
+	
+}
+
+.directoryz:hover {
+	color:rgb(238, 199, 199);
+}
+
+.directory {
+	
+	width:350px;
+	height:350px;
+}
+
+.headd {
+	font-family:Arial;
+	color:gray;
+	text-align:center;
+}
+
+
+

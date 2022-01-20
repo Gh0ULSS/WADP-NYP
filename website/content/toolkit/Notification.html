@@ -1,0 +1,195 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="../../structure.css">
+<link rel="stylesheet" href="../style/NotiStyle.css">
+<title> Notification </title>
+
+<script type="text/javascript">
+
+
+var jsalarm={
+	padfield:function(f){
+		return (f<10)? "0"+f : f
+	},
+	showcurrenttime:function(){
+		var dateobj=new Date()
+		var ct=this.padfield(dateobj.getHours())+":"+this.padfield(dateobj.getMinutes())+":"+this.padfield(dateobj.getSeconds())
+		this.ctref.innerHTML=ct
+		this.ctref.setAttribute("title", ct)
+		if (typeof this.hourwake!="undefined"){ //if alarm is set
+			if (this.ctref.title==(this.hourwake+":"+this.minutewake+":"+this.secondwake)){
+				clearInterval(jsalarm.timer)
+				window.location=document.getElementById("musicloc").value
+			}
+		}
+	},
+	init:function(){
+		var dateobj=new Date()
+		this.ctref=document.getElementById("jsalarm_ct")
+		this.submitref=document.getElementById("submitbutton")
+		this.submitref.onclick=function(){
+			jsalarm.setalarm()
+			this.value="Alarm Set"
+			this.disabled=true
+			return false
+		}
+		this.resetref=document.getElementById("resetbutton")
+		this.resetref.onclick=function(){
+		jsalarm.submitref.disabled=false
+		jsalarm.hourwake=undefined
+		jsalarm.hourselect.disabled=false
+		jsalarm.minuteselect.disabled=false
+		jsalarm.secondselect.disabled=false
+		return false
+		}
+		var selections=document.getElementsByTagName("select")
+		this.hourselect=selections[0]
+		this.minuteselect=selections[1]
+		this.secondselect=selections[2]
+		for (var i=0; i<60; i++){
+			if (i<24) //If still within range of hours field: 0-23
+			this.hourselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getHours()==i)
+			this.minuteselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getMinutes()==i)
+			this.secondselect[i]=new Option(this.padfield(i), this.padfield(i), false, dateobj.getSeconds()==i)
+
+		}
+		jsalarm.showcurrenttime()
+		jsalarm.timer=setInterval(function(){jsalarm.showcurrenttime()}, 1000)
+	},
+	setalarm:function(){
+		this.hourwake=this.hourselect.options[this.hourselect.selectedIndex].value
+		this.minutewake=this.minuteselect.options[this.minuteselect.selectedIndex].value
+		this.secondwake=this.secondselect.options[this.secondselect.selectedIndex].value
+		this.hourselect.disabled=true
+		this.minuteselect.disabled=true
+		this.secondselect.disabled=true
+	}
+}
+
+</script>
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotoolkits.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html">TIPS</a>
+				<ul>
+					<li><a href="../tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="../tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="../tipscontent/planning.html">Planning</a></li>
+					<li><a href="../tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html" style="color:rgb(238, 199, 199);">TOOLKITS</a>
+				<ul>
+				<li><a href="toolkits.html">How Productive Are You?</a></li>
+				<li><a href="assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="#" style="color:rgb(238, 199, 199);">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html" >FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header>
+
+<body>
+<!--- FILL IN YOUR CODES BELOW ---> 
+<fieldset style="break">
+<form action="" method="">
+<div id="jsalarmclock">
+<div><div class="leftcolumn">Current Time:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
+<div><div class="leftcolumn">Set Alarm:</div> 
+<span><select></select> Hour</span> 
+<span><select></select> Minutes</span> <span>
+<select></select> Seconds</span></div>
+<div><div class="leftcolumn">Set Alarm Action:</div> <input type="text" id="musicloc" size="55" value="https://www.youtube.com/watch?v=cFPUqXrztS8" /> 
+<span style="font: normal 11px Tahoma">*Location of page to launch</span></div>
+<input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+</div>
+</form>
+</fieldset>
+
+
+<script type="text/javascript">
+
+jsalarm.init()
+
+</script>
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+
+
+<!--END HERE-->
+
+</body>
+
+
+
+
+
+</html>

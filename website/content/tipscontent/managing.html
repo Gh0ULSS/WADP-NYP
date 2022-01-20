@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="cssforall.css">
+    <link rel="stylesheet" href="../../structure.css">
+
+    <title> Managing Time </title>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html" style="color:rgb(238, 199, 199);">TIPS</a>
+				<ul>
+					<li><a href="#" style="color:rgb(238, 199, 199);">Managing Time</a></li>
+					<li><a href="multitasking.html">Multitasking</a></li>
+					<li><a href="planning.html">Planning</a></li>
+					<li><a href="procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+<body>
+	
+	<div id="transCover">
+	<h1 id="managetimeHeader">Managing Time</h1>
+    
+        <div id="sub2">
+
+            <p class="text"><b>1. Know Your Goals, and Organize Them by Their Value and Priority.</b>
+                <br> How many goals do you have? If you don't have any goals, create at least one goal today.
+                 Goals are essential for effective time management. Perhaps you have too many goals.
+                <br><br> If so, organize them. You need one goal for each primary area of your life: a goal for your work or business,
+                 another for your health, and another to manage your finances, for example.
+                <br><br> On any given day, one goal will have the most value and top priority.
+                 For many people, this is a work or a business goal.
+                <br><br> However, if you're overweight, or have medical challenges,
+                 your health becomes your highest value goal, and your top priority.
+                <br><br> You can't achieve anything, nor can you manage your time, if you're in poor health.
+			</p>
+                <br><br>
+            <p class="text">   
+				<b>2. Turn Big Goals Into Small Daily Tasks.</b>
+                <br> As most goals require a lot of work, it demotivates due to the amount of time spent and how tedious the work is needed to put into it,
+                there are usually accomplished through small but numerous tasks.
+                <br><br> Create deadlines for each project, and create small daily tasks so you complete each project quickly.
+
+            </p>
+			
+		
+
+        </div>
+
+	
+	</div>
+	
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>

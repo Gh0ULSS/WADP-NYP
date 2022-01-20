@@ -1,0 +1,131 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="cssforall.css">
+<link rel="stylesheet" href="../../structure.css">
+
+<title> Multitasking </title>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html" style="color:rgb(238, 199, 199);">TIPS</a>
+				<ul>
+					<li><a href="managing.html">Managing Time</a></li>
+					<li><a href="#" style="color:rgb(238, 199, 199);">Multitasking</a></li>
+					<li><a href="planning.html">Planning</a></li>
+					<li><a href="procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+<body>
+
+<div id="transCover">
+	<h1 id="managetimeHeader">Multi-tasking</h1>
+   
+	<div id="sub2">
+		<p class="text"><b>1. Define the Tasks in Advance</b><br>
+		Always be sure of what you are going to do before you do it. Don't wait until you are in the middle of your first
+		task then start to decide what you want to accomplish.<br>
+		Have a plan and set your goals, even when you're multitasking, keep the amount of things you want to multitask 
+		small so you would not have too much on your hands at one time.<br>
+		To be efficient, you should already have the tasks you want to accomplish set and stick to them. If you think of 
+		additional stuffs, you can always add it to another list.<br></p>
+
+		<p class = "text"><b>2. Recognise what can or can't be multitasked.</b><br>
+		There are going to be tasks that will require your complete attention. Some tasks do not work well with multitasking.<br>
+		You must recognise those tasks and avoid multitasking with them, if you do, the results may turn out worse than you predicted<br>
+		even though it may save you some time.<br></p>
+
+
+
+
+
+	</div>
+</div>
+	
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>

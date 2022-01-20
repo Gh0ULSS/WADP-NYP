@@ -1,0 +1,136 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="cssforall.css">
+<link rel="stylesheet" href="../../structure.css">
+
+<title> Stop Procrastination </title>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotips.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html" style="color:rgb(238, 199, 199);">TIPS</a>
+				<ul>
+					<li><a href="managing.html">Managing Time</a></li>
+					<li><a href="multitasking.html">Multitasking</a></li>
+					<li><a href="planning.html">Planning</a></li>
+					<li><a href="#" style="color:rgb(238, 199, 199);">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="../toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="../toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="../toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header> 
+<body>
+
+<div id="transCover">
+	<h1 id="managetimeHeader">Stop Procrastination</h1>
+    
+
+        <div id="sub2">
+
+
+		<p class="text"><b>1. Break your work into little steps.</b><br>
+		Part of the reason why we procrastinate is because subconsciously, we find the work too overwhelming for us.</br>
+		Break your work into little parts, this way you can focus on one thing at a time.<br><br>
+		If you're still procrastinating, then break down the work even more. <br>
+		Eventually you'll find it easy to be able to complete.<br><br></p>
+
+		<p class="text"><b>2. Eliminate things that cause you to procrastinate. </b><br>
+		If you are procrastinating too much, there is probably something distracting you from your work. 
+		You should identify what is causing you to procrastinate.<br><br>
+		Afterwards, you should avoid what is causing you to procrastinate. If it is a website, an app or anything related to 
+		your phone or computer, put them aside while you do your work.<br></p>
+
+
+ 
+
+
+
+
+		</div>
+
+
+</div>
+
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>

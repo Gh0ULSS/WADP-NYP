@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../style/assignmentchecklistcss.css">
+<link rel="stylesheet" href="../../structure.css">
+<title> Assignment Checklist </title>
+
+<script>
+var counter = 0;
+function moreFields() {
+	document.getElementById('moreFields').onclick = moreFields;
+	moreFields();
+}
+function moreFields() {
+	counter++;
+	var newFields = document.getElementById('details').cloneNode(true);
+	newFields.id = '';
+	newFields.style.display = 'block';
+	var newField = newFields.childNodes;
+	for (var i=0;i<newField.length;i++) {
+		var theName = newField[i].name
+		if (theName)
+			newField[i].name = theName + counter;
+	}
+	var insertHere = document.getElementById('more');
+	insertHere.parentNode.insertBefore(newFields,insertHere);
+}
+
+</script>
+
+</head>
+
+<header>
+
+	<!---<div id="background"> 
+		<img src="../../images/background.png" class="stretch">
+	</div>-->
+	<div id="imglogos">
+	<img class="logos" id="title" src="../../../images/title.png">
+	<img class="logos" id="logo" src="../../../images/logotoolkits.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="../../home.html">HOME</a></li>
+			<li><a href="../tips.html">TIPS</a>
+				<ul>
+					<li><a href="../tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="../tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="../tipscontent/planning.html">Planning</a></li>
+					<li><a href="../tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="../toolkit.html" style="color:rgb(238, 199, 199);">TOOLKITS</a>
+				<ul>
+				<li><a href="toolkits.html">How Productive Are You?</a></li>
+				<li><a href="#"  style="color:rgb(238, 199, 199);">Daily Assignments Checklist</a></li>
+				<li><a href="Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="../timetable.html">TIMETABLE</a></li>
+			<li><a href="../focus.html">FOCUS</a></li>
+			<li><a href="../faq.html">FAQ</a>
+				<ul>
+					<li><a href="../faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="../faq.html">Frequently Asked Questions</a></li>
+					<li><a href="../faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	
+
+	<div class="banners">
+		<img class="banner" src="../../../images/banner1.jpg">
+		<img class="banner" src="../../../images/banner2.jpg">
+		<img class="banner" src="../../../images/banner3.png">
+		<img class="banner" src="../../../images/banner4.png">
+		<img class="banner" src="../../../images/banner5.png">
+
+	</div>
+
+<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+</header>
+
+
+
+<body>
+
+
+	
+	<!-- DO NOT TOUCH PLACE BEGINS HERE -->
+<article id="reminder" style="height:63%; margin-top:2%; width:83%; margin-bottom:1%;">
+
+<h2 style="font-family:Calibri; text-align:center; padding-left:1%; padding-right:1%; ">Reminder Information</h2>
+	<p style="font-family:Calibri" >Name of reminder:   <span id = "nameReminderAlert"></span> </p>
+	<p style="font-family:Calibri">Importance of alert:  <span  id="importanceAlert"></span ></p>
+	<p style="font-family:Calibri" >Duration before alert:  <span  id="timeAlert"></span > </p> 
+	<p style="font-family:Calibri">Repeat:  <span  id="repeaterAlert"></span></p>
+
+</article>
+<form id="details" action="demo_form.asp" style="padding:1% 1% 1% 1%; margin-left:4%; margin-right:4%; margin-bottom:2%;">
+	<legend style="text-decoration:underline; font-size:20px;">Reminder</legend>
+	
+	<h4 for="check" style="text-decoration:underline"><label>Name of reminder:</label></h4>
+	
+	<input type="text" id="nameReminder" name="check" placeholder="Name of Reminder" required />
+		<p>
+			<label>Importance: </label>
+			
+			<select name="importance"id="importance" placeholder="Importance"required />
+				<option value="input option">Choose</option>
+				<option value="Trivial">Trivial</option>
+				<option value="Minor">Minor</option>
+				<option value="Important">Important</option>
+				<option value="Urgent">Urgent</option>
+			</select>
+		</p>
+	
+	<p>
+		<h4 style="underlined" > Reminder to play in: </h4>
+			<select name="time"id="time">
+				<option value="input option">Choose time</option>
+				<option value="10min">10 Minutes</option>
+				<option value="30min">30 Minutes</option>
+				<option value="1hour">1 Hour</option>
+				<option value="1day">1 Day</option>
+			</select>
+	</p>
+	<label>Repeat</label>
+		<input type ="radio" name="repeater" id="repeater" value="Yes"/>
+	<label>Once</label>
+		<input type ="radio" name="repeater" id="repeater" value="No" />
+	<br>
+		<input type="reset" value="Reset"  /> 
+	<input type="button" value="Delete"onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+</form>
+<form id="more" style="clear:left; padding:2% 2% 2% 2%; margin-left:5%; margin-right:5%; ">
+
+		<p>
+		<label style="text-decoration:underline; font-size:20px;">Need more?</label>
+		</p>
+			<input type="button" id="add" value="Add " onclick="moreFields()" style="padding:1%;"/>
+			<input type="button" value="Submit" onclick="submission()"/>
+
+</form>
+	
+<!-- DO NOT TOUCH PLACE BEGINS HERE -->
+<!--END HERE-->
+
+
+    <script>
+
+	<!-- DO NOT TOUCH PLACE BEGINS HERE -->
+function submission(){
+var reminderName = document.getElementById("nameReminder");
+localStorage.setItem("nameReminderAlert", reminderName.value);
+
+var importance= document.getElementById("importance");
+localStorage.setItem("importanceAlert", importance.value);
+
+var time= document.getElementById("time");
+localStorage.setItem("timeAlert", time.value);
+
+var repeater= document.getElementById("repeater");
+localStorage.setItem("repeaterAlert", repeater.value);
+    alarm();
+}
+        </script>
+    <script>
+function alarm() {
+var nameReminderAlert = localStorage.getItem("nameReminderAlert");
+    document.getElementById("nameReminderAlert").innerHTML= 
+        nameReminderAlert ;
+var importanceAlert = localStorage.getItem("importanceAlert");
+    document.getElementById("importanceAlert").innerHTML = importanceAlert ;
+var timeAlert = localStorage.getItem("timeAlert");
+    document.getElementById("timeAlert").innerHTML = timeAlert  ;
+var repeaterAlert = localStorage.getItem("repeaterAlert");
+    document.getElementById("repeaterAlert").innerHTML = repeaterAlert ;
+
+}
+    
+</script>
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+
+
+
+
+
+</html>
+<!-- to do
+*make the function
+*call the function
+*function takes ininfo
+fucntion displayesinfo
+sets alarm
+alarm calls alarm function
+fucntion displays alert
+done
+
+-->

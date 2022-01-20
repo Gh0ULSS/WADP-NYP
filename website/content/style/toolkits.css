@@ -1,0 +1,75 @@
+
+
+/* my part */
+
+fieldset {
+	background-color:white;
+	opacity:0.6;
+	float:right;
+	height:545px;
+	width:900px;
+	margin-top:50px;
+	margin-bottom:65px;    /* 100 */
+	margin-right:525px;   /*  525   */
+	position:static;
+	border-radius: 40px 10px 40px 10px;
+	
+}
+
+
+ legend {
+	font-size:23px;
+	background-color: teal;
+	text-align:left;
+	margin-left:25px;
+	font-family:calibri;
+	color: white;
+	height:35px;
+	border-radius: 15px 2px 15px 2px;
+	width: 250px;
+	padding-left:10px;
+	padding-top: 5px;
+}
+
+
+ #right2 {
+    background-color:rgba(220, 241, 237,1);
+	float:right;
+	margin-right:105px;
+	height:420px;
+	width:700px;
+	margin-top:25px;
+	margin-bottom:35px;
+	position:static;
+    border-radius:40px 10px 40px 10px;
+}
+
+
+ #right2 form  {
+	font-size:18px;
+	text-align:left;
+	position:relative;
+	clear:both;
+	margin-left:20px;
+	margin-top:55px;
+	font-family:calibri;
+	
+}
+
+#changecolor {
+	font-family:calibri;
+	font-size:25px;
+	margin-left:750px;
+	color:green;
+	
+}
+
+tr td {
+    padding-bottom:50px;
+
+}
+
+.button {
+	margin-left:490px;
+
+} 
