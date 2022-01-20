@@ -1,0 +1,197 @@
+<!doctype html> 
+<html>
+<head>
+<link rel="stylesheet" href="../structure.css">
+<link rel="stylesheet" href="style/timetable.css">
+<title> TIMETABLE </title>
+
+
+</head>
+
+
+<body>
+
+<header>
+
+<div id="imglogos">
+	<img class="logos" id="title" src="../../images/title.png">
+	<img class="logos" id="logo" src="../../images/logotimetable.png">
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href='../home.html'>HOME</a></li>
+			<li><a href="tips.html">TIPS</a>
+				<ul>
+					<li><a href="tipscontent/managing.html">Managing Time</a></li>
+					<li><a href="tipscontent/multitasking.html">Multitasking</a></li>
+					<li><a href="tipscontent/planning.html">Planning</a></li>
+					<li><a href="tipscontent/procrastination.html">Stop Procrastination</a></li>
+				</ul>
+			</li>
+			<li><a href="toolkit.html">TOOLKITS</a>
+				<ul>
+				<li><a href="toolkit/toolkits.html">How Productive Are You?</a></li>
+				<li><a href="toolkit/assignmentchecklist.html">Daily Assignments Checklist</a></li>
+				<li><a href="toolkit/Notification.html">Agenda Notification</a></li>
+				</ul>
+			</li>
+			<li><a href="timetable.html" style="color:rgb(238, 199, 199);">TIMETABLE</a></li>
+			<li><a href="focus.html">FOCUS</a></li>
+			<li><a href="faq.html">FAQ</a>
+				<ul>
+					<li><a href="faqcontent/aboutus.html">About Us</a></li>
+					<li><a href="faq.html">Frequently Asked Questions</a></li>
+					<li><a href="faqcontent/contactus.html">Contact Us</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+<div class="banners">
+		<img class="banner" src="../../images/banner1.jpg">
+		<img class="banner" src="../../images/banner6.jpg">
+		<img class="banner" src="../../images/banner3.png">
+		<img class="banner" src="../../images/banner4.png">
+		<img class="banner" src="../../images/banner5.png">
+		<img class="banner" src="../../images/banner2.jpg">
+		
+
+	</div>
+	
+	<script>
+	
+	var myIndex = 0;
+	slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("banner");
+    for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+    }
+	
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 5000); 
+}
+
+</script>
+
+
+
+</header> 
+
+
+<h1>TIMETABLE MADE FOR YOU</h1>
+
+
+<div id = "wrapper">
+
+<form name="form" action="timetablecontent/timetableschedule.html">
+<fieldset id ="border">
+<h3>Fill in these questions, and we'll generate a timetable for you!</h3>
+<div class = "post-it">
+<h4>Quote of the day:</h4>
+
+	TOMORROW YOU WILL 
+	WISH YOU<br>HAD
+	STARTED TODAY
+</div>
+
+<div>
+
+<label id ="timeslot">What time do you usually reach home? </label>
+<p>
+<select id="timeslot" name=" ">
+<option value="">Select</option>
+<option value="12.00pm">12.00pm</option>
+<option value="13.00pm">13.00pm</option>
+<option value="14.00pm">14.00pm</option>
+<option value="15.00pm">15.00pm</option>
+<option value="16.00pm">16.00pm</option>
+<option value="17.00pm">17.00pm</option>
+<option value="18.00pm">18.00pm</option>
+<option value="19.00pm">19.00pm</option>
+<option value="20.00pm">20.00pm</option>
+</select>
+<p>
+
+<label id ="hours">How many hours a day are you willing to commit to do school work?</label>
+<p>
+<select id="hours" name=" ">
+<option value="">Select</option>
+<option value="20min">20 minutes</option>
+<option value="30min">30 minutes</option>
+<option value="40min">40 minutes</option>
+<option value="50min">50 minutes</option>
+<option value="1hour">1 hour</option>
+<option value="1hour10min">1 hour 10 minutes</option>
+<option value="1hour20min">1 hour 20 minutes</option>
+<option value="1hour30min">1 hour 30 minutes</option>
+<option value="1hour40min">1 hour 40 minutes</option>
+<option value="1hour50min">1 hour 50 minutes</option>
+<option value="2hour">2 hours</option>
+</select>
+<p>
+
+<label id ="modules">What is the maximum modules requires you to do homework per day?</label>
+<p>
+<select id="modules" name=" ">
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select>
+
+
+<p>
+<label id = "Monday">What are the "Most to Least Importance Modules" on Monday?<p><input type="text" name=" " required placeholder="etc. IT1213 & ITP111 &NA"/></label>
+<p>
+<label id = "Tuesday">What are the "Most to Least Importance Modules" on Tuesday?<p><input type="text" name=" " required placeholder="etc. IT1213 & ITP111 &NA"/></label>
+<p>
+<label id = "Wednesday">What are the "Most to Least Importance Modules" on Wednesday?<p><input type="text" name=" " required placeholder="etc. IT1213 & ITP111 &NA"/></label>
+<p>
+<label id = "Thursday">What are the "Most to Least Importance Modules" on Thursday?<p><input type="text" name=" " required placeholder="etc. IT1213 & ITP111 &NA"/></label>
+<p>
+<label id = "Friday">What are the "Most to Least Importance Modules" on Friday?<p><input type="text" name=" " required placeholder="etc. IT1213 & ITP111 &NA"/></label>
+<p>
+<input type="submit" value="COMPLETED"/>
+
+<input type="reset" onclick="myFunction()" value="RESET FORM" id="reset"/>
+
+<script>
+function myFunction() {
+    document.getElementById("form").reset();
+}
+</script>
+
+<div id="link">
+<a href ="timetableform.html" target="_blank" title="Click here for form example!">Click here!</a>
+</div>
+
+</fieldset>
+
+</form>
+
+</div>
+
+<footer>
+<div>
+	<a href="http://www.nyp.edu.sg"><img id="nyp" src="../../images/nyplogo.png" width="150px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/tumblr.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/fb.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/insta.png" width="30px" height="30px"></a>
+	<a href=""><img class="icons" src="../../images/twitter.png" width="30px" height="30px"></a>
+</div>
+<div class="link">
+	<a href="">Contact Us</a>
+	<a href="">About Us</a>
+</div>
+</footer>
+
+</body>
+</html>
